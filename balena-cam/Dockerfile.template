@@ -1,6 +1,6 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:stretch
 
-RUN echo "deb http://deb.debian.org/debian jessie main" >> /etc/apt/sources.list
+RUN echo "deb http://deb.debian.org/debian stretch main" >> /etc/apt/sources.list
 # Install dependencies
 RUN apt-get update && \
   apt-get install -y --allow-unauthenticated \
