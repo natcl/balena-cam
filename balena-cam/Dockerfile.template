@@ -3,7 +3,7 @@ FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:stretch
 RUN echo "deb http://deb.debian.org/debian jessie main" >> /etc/apt/sources.list
 # Install dependencies
 RUN apt-get update && \
-  apt-get install -y \
+  apt-get install -y --allow-unauthenticated \
     gstreamer-1.0 \
     v4l-utils \
     libopus-dev \
